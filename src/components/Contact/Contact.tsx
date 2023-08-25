@@ -1,8 +1,9 @@
 import { GrLocation } from "react-icons/gr"
 import { MdOutlineMailOutline } from "react-icons/md"
 import { BsTwitter } from "react-icons/bs"
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
+
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -14,7 +15,7 @@ const Contact = () => {
                 <div className="flex flex-col gap-5">
 
                     <div className="my-6">
-                        <h1 className="text-center text-3xl mb-4 font-semibold ok">TESTIMONIALS</h1>
+                        <h1 className="text-center text-3xl mb-4 font-semibold text-textSecondary">TESTIMONIALS</h1>
 
                         <Swiper
                             spaceBetween={30}
@@ -84,7 +85,7 @@ const Contact = () => {
                     </div>
 
                     <div>
-                        <h1 className="text-3xl font-semibold text-center">CONTACT</h1>
+                        <h1 className="text-3xl font-semibold text-center text-textSecondary">CONTACT</h1>
                     </div>
 
                     <div className="flex flex-col md:flex-row justify-around items-center">
@@ -92,7 +93,7 @@ const Contact = () => {
 
                         <div className="flex flex-col gap-4">
                             <div className="flex items-center gap-3">
-                                <div className="bg-yellow-300 p-3 rounded-full">
+                                <div className="bg-secondaryBg p-3 rounded-full">
                                     <GrLocation />
                                 </div>
                                 <div className="flex flex-col">
@@ -101,7 +102,7 @@ const Contact = () => {
                                 </div>
                             </div>
                             <div className="flex items-center gap-3">
-                                <div className="bg-yellow-300 p-3 rounded-full">
+                                <div className="bg-secondaryBg p-3 rounded-full">
                                     <MdOutlineMailOutline />
                                 </div>
                                 <div className="flex flex-col">
@@ -110,7 +111,7 @@ const Contact = () => {
                                 </div>
                             </div>
                             <div className="flex items-center gap-3">
-                                <div className="bg-yellow-300 p-3 rounded-full">
+                                <div className="bg-secondaryBg p-3 rounded-full">
                                     <BsTwitter />
                                 </div>
                                 <div className="flex flex-col">
@@ -124,15 +125,15 @@ const Contact = () => {
 
                         <div className="flex flex-col w-full md:w-1/2 gap-3">
                             <div className="flex gap-3 flex-col mt-7 md:mt-0 md:flex-row">
-                                <input className="w-full md:w-1/2 px-4 py-3 rounded-md focus:border-yellow-500 border outline-none" type="text" placeholder="Your Name" />
-                                <input className="w-full md:w-1/2 px-4 py-3 rounded-md focus:border-yellow-500 border outline-none" type="email" placeholder="Your Email" />
+                                <input className="bg-transparent w-full md:w-1/2 px-4 py-3 rounded-md focus:border-[#5918df] border outline-none" type="text" placeholder="Your Name" />
+                                <input className="bg-transparent w-full md:w-1/2 px-4 py-3 rounded-md focus:border-[#5918df] border outline-none" type="email" placeholder="Your Email" />
                             </div>
 
                             <div>
-                                <input className="w-full px-4 py-3 rounded-md focus:border-yellow-500 border outline-none" type="text" placeholder="Message" />
+                                <input className="bg-transparent w-full px-4 py-3 rounded-md focus:border-[#5918df] border outline-none" type="text" placeholder="Message" />
                             </div>
 
-                            <button className="bg-yellow-300 hover:bg-yellow-400 active:bg-yellow-500 font-semibold p-3 w-fit mx-auto rounded-lg">Send Message</button>
+                            <button className="bg-secondaryBg hover:bg-yellow-400 active:bg-yellow-500 font-semibold p-3 w-fit mx-auto rounded-lg">Send Message</button>
                         </div>
                     </div>
                 </div>

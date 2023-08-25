@@ -9,8 +9,9 @@ const About = () => {
             <div className="container mx-auto px-4 py-3">
                 <div className="flex flex-col gap-10">
                     <div className="flex flex-col space-y-3">
-                        <h1 className="text-center text-3xl font-semibold">ABOUT</h1>
-                        <p className="max-w-5xl text-center mx-auto">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        <h1 className="text-center text-3xl font-semibold text-textSecondary">ABOUT</h1>
+                        <p className="max-w-5xl text-center mx-auto">As a full-stack web developer, I have a strong background in both front-end and back-end technologies.
+                            I am experienced in working with frameworks like React and Qwik.js to develop linked web applications.</p>
                     </div>
 
                     <div className="flex justify-evenly flex-col gap-5 lg:flex-row items-center">
@@ -18,72 +19,70 @@ const About = () => {
                             <img src="https://bootstrapmade.com/demo/templates/MyResume/assets/img/profile-img.jpg" className="h-[300px] w-[300px]" alt="" />
                         </div>
 
-                        <div className="flex flex-col max-w-2xl space-y-3">
-                            <h1 className="text-2xl font-semibold underline">UI/UX Designer & Web Developer.</h1>
-                            <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div className="flex flex-col max-w-2xl space-y-5">
+                            <h1 className="text-2xl font-semibold underline">Web Developer & Mentor</h1>
+                            <p className="text-lg">I’m a 15 y/o full-stack web developer building cool products and teaching others by creating content that revolves around many areas in web development.</p>
 
                             <div className="flex justify-between">
                                 <div className="flex flex-col">
-                                    <span>Birthday: 1 May 1995</span>
-                                    <span>Website: www.example.com</span>
-                                    <span>City: New York, USA</span>
+                                    <span className="text-lg font-semibold">Name: Hero</span>
+                                    <span className="text-lg font-semibold">Country: India</span>
                                 </div>
                                 <div className="flex flex-col">
-                                    <span>Email</span>
-                                    <span>Age</span>
-                                    <span>Freelance</span>
+                                    <span className="text-lg font-semibold">Email: herojod2525@gmail.com</span>
+                                    <span className="text-lg font-semibold">Age: 15</span>
                                 </div>
                             </div>
 
-                            <p>Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.</p>
+                            <p className="leading-7">I pride myself on my ability to seamlessly integrate the front-end and back-end components of a web application, ensuring a smooth user experience and efficient functionality. Additionally, I have a deep understanding of databases, graphics design, and user experience management, allowing me to excel in all aspects of web development. I believe that being a full-stack web developer requires not only technical expertise but also excellent communication and teamwork skills.</p>
                         </div>
                     </div>
 
                     <div className="flex flex-col gap-8">
                         <div className="flex flex-col space-y-3">
-                            <h1 className="text-center text-3xl font-semibold">FACTS</h1>
-                            <p className="max-w-5xl text-center mx-auto">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                            <h1 className="text-center text-3xl font-semibold text-textSecondary">FACTS</h1>
+                            <p className="max-w-5xl text-center mx-auto text-lg">Facts related to me</p>
                         </div>
 
                         <div className="flex justify-center gap-6 flex-col sm:flex-row">
                             <div className="flex flex-col gap-2 text-xl items-center">
-                                <div className="p-3 bg-red-300 rounded-full flex justify-center items-center">
+                                <div className="p-3 bg-secondaryBg rounded-full flex justify-center items-center">
                                     <FaRegFaceSmileBeam />
                                 </div>
-                                <span className="font-semibold">232</span>
+                                <span className="font-semibold">20</span>
                                 <span>Happy Clients</span>
                             </div>
                             <div className="flex flex-col gap-2 text-xl items-center">
-                                <div className="p-3 bg-red-300 rounded-full flex justify-center items-center">
+                                <div className="p-3 bg-secondaryBg rounded-full flex justify-center items-center">
                                     <GrProjects />
                                 </div>
-                                <span className="font-semibold">100</span>
+                                <span className="font-semibold">50</span>
                                 <span>Projects</span>
                             </div>
                             <div className="flex flex-col gap-2 text-xl items-center">
-                                <div className="p-3 bg-red-300 rounded-full flex justify-center items-center">
+                                <div className="p-3 bg-secondaryBg rounded-full flex justify-center items-center">
                                     <BiSupport />
                                 </div>
-                                <span className="font-semibold">100</span>
+                                <span className="font-semibold">10</span>
                                 <span>Supported</span>
                                 <span>People</span>
                             </div>
                             <div className="flex flex-col gap-2 text-xl items-center">
-                                <div className="p-3 bg-red-300 rounded-full flex justify-center items-center">
+                                <div className="p-3 bg-secondaryBg rounded-full flex justify-center items-center">
                                     <PiMedalLight />
                                 </div>
-                                <span className="font-semibold">20</span>
+                                <span className="font-semibold">5</span>
                                 <span>Achievements</span>
                             </div>
                         </div>
                     </div>
 
                     <div className="flex flex-col space-y-3 py-10">
-                        <h1 className="text-center text-3xl font-semibold">SKILLS</h1>
-                        <p className="max-w-5xl text-center mx-auto">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        <h1 className="text-center text-3xl font-semibold text-textSecondary">SKILLS</h1>
+                        <p className="max-w-5xl text-center mx-auto">The skill of programming is essential for building a strong and impressive portfolio in the field of software development. Having a strong skill in programming is paramount when it comes to building an impressive portfolio in the field of software development.</p>
 
-                        <div className="flex justify-evenly md:flex-row gap-3">
-                            <div className="flex gap-9 flex-wrap justify-center">
+                        <div className="flex justify-center gap-3 py-10">
+                            <div className="grid grid-cols-3 gap-10">
                                 <div className="flex flex-col">
                                     <div className="circle">
                                         <span className="text">HTML</span>
