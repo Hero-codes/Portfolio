@@ -1,7 +1,7 @@
-import Hero from './components/Hero/Hero'
-import About from './components/About/About'
-import Services from './components/Services/Services'
-import Contact from './components/Contact/Contact'
+import Hero from './scenes/Hero/Hero'
+import About from './scenes/About/About'
+import Services from './scenes/Services/Services'
+import Contact from './scenes/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import NavigationBar from './components/NavigationBar/NavigationBar'
 
@@ -18,4 +18,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

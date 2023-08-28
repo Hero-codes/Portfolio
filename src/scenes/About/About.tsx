@@ -1,7 +1,9 @@
-import { FaRegFaceSmileBeam } from "react-icons/fa6"
+import { FaRegFaceSmileBeam, FaStripe } from "react-icons/fa6"
 import { GrProjects } from "react-icons/gr"
-import { BiSupport } from "react-icons/bi"
+import { BiSupport, BiLogoJavascript, BiLogoTypescript, BiLogoMongodb } from "react-icons/bi"
 import { PiMedalLight } from "react-icons/pi"
+import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa"
+import { SiMongoose, SiFirebase, SiTailwindcss, SiChakraui, SiJsonwebtokens, SiRazorpay, SiExpress } from "react-icons/si"
 
 const About = () => {
     return (
@@ -16,7 +18,7 @@ const About = () => {
 
                     <div className="flex justify-evenly flex-col gap-5 lg:flex-row items-center">
                         <div className="mb-6 md:mb-0">
-                            <img src="https://bootstrapmade.com/demo/templates/MyResume/assets/img/profile-img.jpg" className="h-[300px] w-[300px]" alt="" />
+                            <img src="https://avatars.githubusercontent.com/u/98174971?v=4" className="h-[300px] w-[300px] rounded-full" alt="" />
                         </div>
 
                         <div className="flex flex-col max-w-2xl space-y-5">
@@ -77,54 +79,9 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col space-y-3 py-10">
+                    <div className="flex flex-col space-y-3 py-10 overflow-hidden">
                         <h1 className="text-center text-3xl font-semibold text-textSecondary">SKILLS</h1>
                         <p className="max-w-5xl text-center mx-auto">The skill of programming is essential for building a strong and impressive portfolio in the field of software development. Having a strong skill in programming is paramount when it comes to building an impressive portfolio in the field of software development.</p>
-
-                        <div className="flex justify-center gap-3 py-10">
-                            <div className="grid grid-cols-3 gap-10">
-                                <div className="flex flex-col">
-                                    <div className="circle">
-                                        <span className="text">HTML</span>
-                                        <span className="num">100%</span>
-                                    </div>
-
-                                </div>
-                                <div className="flex flex-col">
-                                    <div className="circle">
-                                        <span className="text">CSS</span>
-                                        <span className="num">100%</span>
-                                    </div>
-
-                                </div>
-                                <div className="flex flex-col">
-                                    <div className="circle">
-                                        <span className="text">JavaScript</span>
-                                        <span className="num">100%</span>
-                                    </div>
-                                </div>
-
-                                <div className="flex flex-col">
-                                    <div className="circle">
-                                        <span className="text">TypeScript</span>
-                                        <span className="num">100%</span>
-                                    </div>
-                                </div>
-                                <div className="flex flex-col">
-                                    <div className="circle">
-                                        <span className="text">React</span>
-                                        <span className="num">100%</span>
-                                    </div>
-
-                                </div>
-                                <div className="flex flex-col">
-                                    <div className="circle">
-                                        <span className="text">Qwik JS</span>
-                                        <span className="num">100%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
 

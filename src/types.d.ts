@@ -1,8 +1,3 @@
-type ISkills = {
-    title: string;
-    percentage: number
-};
-
 type IBlogs = {
     coverImg: string;
     title: string;

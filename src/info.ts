@@ -1,31 +1,3 @@
-//! @Skills
-export const skills: ISkills[] = [
-    {
-        title: "HTML",
-        percentage: 100
-    },
-    {
-        title: "CSS",
-        percentage: 60
-    },
-    {
-        title: "JavaScript",
-        percentage: 73
-    },
-    {
-        title: "TypeScript",
-        percentage: 65
-    },
-    {
-        title: "React",
-        percentage: 79
-    },
-    {
-        title: "Qwik JS",
-        percentage: 50
-    },
-];
-
 //! @Blogs
 export const blogs: IBlogs[] = [
     {

@@ -2,6 +2,11 @@ import { FaBook } from "react-icons/fa"
 import { HiTerminal } from "react-icons/hi"
 
 const Services = () => {
+
+    const frontend: string[] = ["HTML", "CSS", "JavaScript", "TypeScript", "TailwindCSS", "Chakra UI", "ReactJS", "Qwik JS"];
+    const backend: string[] = ["MongoDB", "Mongoose", "ExpressJS", "RazorPay", "Stripe", "JWT"];
+    const devTools: string[] = ["VSCode", "Vercel", "Figma", "GitHub"]
+
     return (
         <div>
             <div className="container mx-auto px-4 py-3">
@@ -23,16 +28,39 @@ const Services = () => {
                                 </div>
 
                                 <div className="flex flex-col items-center gap-2">
-                                    <h1 className="text-lg">Languages I use:</h1>
-                                    <span>HTML</span>
+                                    <h1 className="text-lg mb-3">Languages I use:</h1>
+                                    <div className="flex justify-evenly flex-col md:flex-row items-center py-4 gap-10">
+                                        <div className="grid gap-6 place-items-center grid-cols-2">
+                                            {
+                                                frontend.map(value => (
+                                                    <>
+                                                        <span className="hover:text-blue-500 transition cursor-pointer">{value}</span>
+                                                    </>
+                                                ))
+                                            }
+                                        </div>
+
+                                        <div className="grid gap-6 place-items-center grid-cols-2">
+                                            {
+                                                backend.map(value => (
+                                                    <>
+                                                        <span className="hover:text-blue-500 transition cursor-pointer">{value}</span>
+                                                    </>
+                                                ))
+                                            }
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div className="flex flex-col items-center gap-2">
-                                    <h1>DEV Tools:</h1>
-                                    <span>VSCode</span>
-                                    <span>Vercel</span>
-                                    <span>Figma</span>
-                                    <span>Github</span>
+                                    <h1 className="my-3">DEV Tools:</h1>
+                                    <div className="grid gap-6 place-items-center grid-cols-2">
+                                        {
+                                            devTools.map(value => (
+                                                <span>{value}</span>
+                                            ))
+                                        }
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +78,7 @@ const Services = () => {
 
                                 <div className="flex flex-col items-center gap-2">
                                     <h1 className="text-lg">Experiences I draw from:</h1>
-                                    <span>UX/UI, Product design, Freelancing</span>
+                                    <span>UX/UI, Freelancing</span>
                                 </div>
 
                                 <div className="flex flex-col items-center gap-2">
