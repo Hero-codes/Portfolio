@@ -13,7 +13,7 @@ export const blogs: IBlogs[] = [
         url: "https://javascript.plainenglish.io/teach-your-pc-to-speak-using-javascript-c6e4460fbabc"
     },
     {
-        coverImg: "https://miro.medium.com/v2/resize:fill:112:112/1*aBC8PHTpV50HmN23EWyKfQ.pngg",
+        coverImg: "https://miro.medium.com/v2/resize:fill:112:112/1*aBC8PHTpV50HmN23EWyKfQ.png",
         reading_time: 17,
         title: "React Todo With Firebase",
         url: "https://medium.com/@herocodes/react-todo-with-firebase-2f2f370e9521"

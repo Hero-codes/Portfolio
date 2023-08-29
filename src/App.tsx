@@ -4,6 +4,7 @@ import Services from './scenes/Services/Services'
 import Contact from './scenes/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import NavigationBar from './components/NavigationBar/NavigationBar'
+import Blogs from './scenes/Blogs/Blogs'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <About />
       <Services />
+      <Blogs />
       <Contact />
       <Footer />
       <NavigationBar />
