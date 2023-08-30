@@ -10,3 +10,5 @@ type ITestimonials = {
     writer: string;
     coverImg: string
 }
+
+declare module 'react-scroll'
