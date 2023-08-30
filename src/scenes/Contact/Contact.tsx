@@ -47,7 +47,7 @@ const Contact = () => {
                     </div>
 
                     <div>
-                        <h1 className="text-3xl font-semibold text-center text-textSecondary">CONTACT</h1>
+                        <h1 className="text-3xl font-semibold text-center text-textSecondary" id="contact">CONTACT</h1>
                     </div>
 
                     <div className="flex flex-col md:flex-row justify-around items-center">
@@ -85,18 +85,17 @@ const Contact = () => {
 
                         {/* RIGHT */}
 
-                        <div className="flex flex-col w-full md:w-1/2 gap-3">
+                        <form action="https://formspree.io/f/mjvqrvgb" method="POST" className="flex flex-col w-full md:w-1/2 gap-3">
                             <div className="flex gap-3 flex-col mt-7 md:mt-0 md:flex-row">
-                                <input className="bg-transparent w-full md:w-1/2 px-4 py-3 rounded-md focus:border-[#5918df] border outline-none" type="text" placeholder="Your Name" />
-                                <input className="bg-transparent w-full md:w-1/2 px-4 py-3 rounded-md focus:border-[#5918df] border outline-none" type="email" placeholder="Your Email" />
+                                <input className="bg-transparent w-full px-4 py-3 rounded-md focus:border-[#5918df] border outline-none" type="email" name="email" placeholder="Your Email" />
                             </div>
 
                             <div>
-                                <input className="bg-transparent w-full px-4 py-3 rounded-md focus:border-[#5918df] border outline-none" type="text" placeholder="Message" />
+                                <textarea className="bg-transparent w-full px-4 py-3 rounded-md focus:border-[#5918df] border outline-none" name="message" placeholder="Message" />
                             </div>
 
-                            <button className="bg-secondaryBg hover:bg-yellow-400 active:bg-yellow-500 font-semibold p-3 w-fit mx-auto rounded-lg">Send Message</button>
-                        </div>
+                            <button type="submit" className="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 font-semibold p-3 w-fit mx-auto rounded-lg">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>

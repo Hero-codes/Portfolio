@@ -4,7 +4,7 @@ import { HiTerminal } from "react-icons/hi"
 const Services = () => {
 
     return (
-        <div>
+        <div id="services">
             <div className="container mx-auto px-4 py-3">
                 <div className="flex flex-col gap-4">
                     <div className="flex flex-col space-y-3">

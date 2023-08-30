@@ -2,13 +2,14 @@ import { FaRegFaceSmileBeam, FaStripe } from "react-icons/fa6"
 import { GrProjects } from "react-icons/gr"
 import { BiSupport, BiLogoJavascript, BiLogoTypescript, BiLogoMongodb } from "react-icons/bi"
 import { PiMedalLight } from "react-icons/pi"
+import Marquee from "react-fast-marquee";
 import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa"
 import { SiMongoose, SiFirebase, SiTailwindcss, SiChakraui, SiJsonwebtokens, SiRazorpay, SiExpress } from "react-icons/si"
 
 const About = () => {
     return (
         <div>
-            <div className="container mx-auto px-4 py-3">
+            <div className="container mx-auto px-4 py-3" id="about">
                 <div className="flex flex-col gap-10">
                     <div className="flex flex-col space-y-3">
                         <h1 className="text-center text-3xl font-semibold text-textSecondary">ABOUT</h1>
@@ -16,7 +17,7 @@ const About = () => {
                             I am experienced in working with frameworks like React and Qwik.js to develop linked web applications.</p>
                     </div>
 
-                    <div className="flex justify-evenly flex-col gap-5 lg:flex-row items-center">
+                    <div className="flex justify-evenly flex-col-reverse gap-5 lg:flex-row items-center">
                         <div className="mb-6 md:mb-0">
                             <img src="https://avatars.githubusercontent.com/u/98174971?v=4" className="h-[300px] w-[300px] rounded-full" alt="" />
                         </div>
@@ -27,12 +28,12 @@ const About = () => {
 
                             <div className="flex justify-between">
                                 <div className="flex flex-col">
-                                    <span className="text-lg font-semibold">Name: Hero</span>
-                                    <span className="text-lg font-semibold">Country: India</span>
+                                    <span className="text-lg font-bold"><span className="font-semibold text-blue-600">Name:</span> Om Agrawal</span>
+                                    <span className="text-lg font-bold"><span className="font-semibold text-blue-600">Country:</span> India</span>
                                 </div>
                                 <div className="flex flex-col">
-                                    <span className="text-lg font-semibold">Email: herojod2525@gmail.com</span>
-                                    <span className="text-lg font-semibold">Age: 15</span>
+                                    <span className="text-lg font-bold"><span className="font-semibold text-blue-600">Email:</span> herojod2525@gmail.com</span>
+                                    <span className="text-lg font-bold"><span className="font-semibold text-blue-600">Age:</span> 15</span>
                                 </div>
                             </div>
 
@@ -82,7 +83,59 @@ const About = () => {
                     <div className="flex flex-col space-y-3 py-10 overflow-hidden">
                         <h1 className="text-center text-3xl font-semibold text-textSecondary">SKILLS</h1>
                         <p className="max-w-5xl text-center mx-auto">The skill of programming is essential for building a strong and impressive portfolio in the field of software development. Having a strong skill in programming is paramount when it comes to building an impressive portfolio in the field of software development.</p>
-
+                        <Marquee
+                            direction="right"
+                            speed={30}
+                            className="text-4xl">
+                            <div className="mx-9">
+                                <FaHtml5 />
+                            </div>
+                            <div className="mx-9">
+                                <FaCss3Alt />
+                            </div>
+                            <div className="mx-9">
+                                <BiLogoJavascript />
+                            </div>
+                            <div className="mx-9">
+                                <BiLogoTypescript />
+                            </div>
+                            <div className="mx-9">
+                                <FaReact />
+                            </div>
+                            <div className="mx-9">
+                                <SiTailwindcss />
+                            </div>
+                            <div className="mx-9">
+                                <SiChakraui />
+                            </div>
+                        </Marquee>
+                        <div className="py-4"></div>
+                        <Marquee
+                            direction="left"
+                            speed={30}
+                            className="text-4xl">
+                            <div className="mx-9">
+                                <BiLogoMongodb />
+                            </div>
+                            <div className="mx-9">
+                                <SiExpress />
+                            </div>
+                            <div className="mx-9">
+                                <SiMongoose />
+                            </div>
+                            <div className="mx-9">
+                                <SiJsonwebtokens />
+                            </div>
+                            <div className="mx-9">
+                                <SiFirebase />
+                            </div>
+                            <div className="mx-9">
+                                <SiRazorpay />
+                            </div>
+                            <div className="mx-9">
+                                <FaStripe />
+                            </div>
+                        </Marquee>
                     </div>
 
                 </div>

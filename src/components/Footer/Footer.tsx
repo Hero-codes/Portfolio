@@ -3,10 +3,10 @@ import { BiLogoGmail } from "react-icons/bi"
 
 const Footer = () => {
     return (
-        <footer className="w-full py-5">
+        <footer className="w-full py-5 mb-20">
             <hr className="py-4" />
             <div className="flex flex-col gap-5 items-center">
-                <h1 className="text-4xl font-semibold text-textSecondary">Hero</h1>
+                <h1 className="text-4xl font-semibold text-textSecondary">Om Agrawal</h1>
                 <p>Thank you for visiting my website ;)</p>
 
                 <div className="flex gap-3">
@@ -27,7 +27,7 @@ const Footer = () => {
                     </a>
                 </div>
 
-                <span>Made with ♥ | Hero</span>
+                <span>Made with ♥ | Om Agrawal</span>
             </div>
         </footer>
     )

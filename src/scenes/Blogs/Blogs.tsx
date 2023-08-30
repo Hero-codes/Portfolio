@@ -3,7 +3,7 @@ import { FiLink } from "react-icons/fi"
 
 const Blogs = () => {
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto" id="blogs">
             <h1 className="text-center text-3xl font-semibold text-textSecondary">BLOGS</h1>
             <div className="p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                 {
