@@ -1,5 +1,6 @@
 import { FaBook } from "react-icons/fa"
 import { HiTerminal } from "react-icons/hi"
+import { motion } from "framer-motion"
 
 const Services = () => {
 
@@ -7,11 +8,29 @@ const Services = () => {
         <div id="services">
             <div className="container mx-auto px-4 py-3">
                 <div className="flex flex-col gap-4">
-                    <div className="flex flex-col space-y-3">
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.5 }}
+                        transition={{ duration: 0.5 }}
+                        variants={{
+                            hidden: { opacity: 0, x: -50 },
+                            visible: { opacity: 1, x: 0 },
+                        }}
+                        className="flex flex-col space-y-3">
                         <h1 className="text-center text-3xl font-semibold text-textSecondary">SERVICES</h1>
-                    </div>
+                    </motion.div>
 
-                    <div className="flex flex-col md:flex-row gap-3 justify-evenly">
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.5 }}
+                        transition={{ duration: 0.5, delay: 0.3 }}
+                        variants={{
+                            hidden: { opacity: 0, x: -50 },
+                            visible: { opacity: 1, x: 0 },
+                        }}
+                        className="flex flex-col md:flex-row gap-3 justify-evenly">
                         <div className="md:w-1/2 w-full py-5 flex flex-col items-center">
                             <div className="p-3 bg-secondaryBg rounded-full text-xl">
                                 <HiTerminal />
@@ -53,7 +72,7 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>

@@ -6,9 +6,7 @@ type IBlogs = {
 };
 
 type ITestimonials = {
-    desc: string;
+    message: string;
     writer: string;
-    coverImg: string
+    avatar: string
 }
-
-declare module 'react-scroll'
