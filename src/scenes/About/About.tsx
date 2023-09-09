@@ -55,12 +55,12 @@ const About = () => {
                             <h1 className="text-2xl font-semibold underline">Web Developer & Mentor</h1>
                             <p className="text-lg">I’m a 15 y/o full-stack web developer building cool products and teaching others by creating content that revolves around many areas in web development.</p>
 
-                            <div className="flex justify-between">
-                                <div className="flex flex-col">
+                            <div className="flex flex-col md:flex-row gap-3 justify-between">
+                                <div className="flex flex-col gap-3">
                                     <span className="text-lg font-bold"><span className="font-semibold text-blue-600">Name:</span> Om Agrawal</span>
                                     <span className="text-lg font-bold"><span className="font-semibold text-blue-600">Country:</span> India</span>
                                 </div>
-                                <div className="flex flex-col">
+                                <div className="flex flex-col gap-3">
                                     <span className="text-lg font-bold"><span className="font-semibold text-blue-600">Email:</span> herojod2525@gmail.com</span>
                                     <span className="text-lg font-bold"><span className="font-semibold text-blue-600">Age:</span> 15</span>
                                 </div>
