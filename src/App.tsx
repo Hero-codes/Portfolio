@@ -5,6 +5,7 @@ import Contact from './scenes/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import NavigationBar from './components/NavigationBar/NavigationBar'
 import Blogs from './scenes/Blogs/Blogs'
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Contact />
       <Footer />
       <NavigationBar />
+      <Toaster />
     </div>
   )
 }

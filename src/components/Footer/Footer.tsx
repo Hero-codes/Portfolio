@@ -1,7 +1,21 @@
 import { BsTwitter, BsDiscord, BsMedium, BsGithub } from "react-icons/bs"
-import { BiLogoGmail } from "react-icons/bi"
+import { BiLogoGmail } from "react-icons/bi";
+import toast from "react-hot-toast";
 
 const Footer = () => {
+
+    const copyDiscordUsername = () => {
+        navigator.clipboard.writeText("hero.xyz");
+        toast.success("Discord Username: hero.xyz", {
+            style: {
+                borderRadius: '10px',
+                background: '#333',
+                color: '#fff'
+            },
+            position: "top-right"
+        });
+    };
+
     return (
         <footer className="w-full py-5 mb-20">
             <hr className="py-4" />
@@ -13,9 +27,9 @@ const Footer = () => {
                     <a href="https://twitter.com/@HeroCodes404" target="_blank" className="p-3 rounded-full bg-secondaryBg">
                         <BsTwitter />
                     </a>
-                    <a href="https://twitter.com/@HeroCodes404" target="_blank" className="p-3 rounded-full bg-secondaryBg">
+                    <span onClick={copyDiscordUsername} className="p-3 cursor-pointer rounded-full bg-secondaryBg">
                         <BsDiscord />
-                    </a>
+                    </span>
                     <a href="https://github.com/Hero-Codes" target="_blank" className="p-3 rounded-full bg-secondaryBg">
                         <BsGithub />
                     </a>

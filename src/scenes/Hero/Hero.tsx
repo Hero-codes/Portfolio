@@ -2,8 +2,21 @@ import { BsTwitter, BsDiscord, BsMedium, BsGithub } from "react-icons/bs"
 import { BiLogoGmail } from "react-icons/bi"
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion"
+import toast from "react-hot-toast";
 
 const Hero = () => {
+
+    const copyDiscordUsername = () => {
+        navigator.clipboard.writeText("hero.xyz");
+        toast.success("Discord Username: hero.xyz", {
+            style: {
+                borderRadius: '10px',
+                background: '#333',
+                color: '#fff'
+            },
+            position: "top-right"
+        });
+    };
 
     return (
         <div className="container mx-auto" id="hero">
@@ -41,9 +54,9 @@ const Hero = () => {
                         <a href="https://twitter.com/@HeroCodes404" target="_blank" className="text-xl cursor-pointer hover:text-blue-800 transition">
                             <BsTwitter />
                         </a>
-                        <a href="https://twitter.com/@HeroCodes40" target="_blank" className="text-xl cursor-pointer hover:text-blue-800 transition">
+                        <span onClick={copyDiscordUsername} className="text-xl cursor-pointer hover:text-blue-800 transition">
                             <BsDiscord />
-                        </a>
+                        </span>
                         <a href="https://github.com/Hero-Codes" target="_blank" className="text-xl cursor-pointer hover:text-blue-800 transition">
                             <BsGithub />
                         </a>
