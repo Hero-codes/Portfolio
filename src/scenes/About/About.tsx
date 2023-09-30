@@ -61,8 +61,7 @@ const About = () => {
                                     <span className="text-lg font-bold"><span className="font-semibold text-blue-600">Country:</span> India</span>
                                 </div>
                                 <div className="flex flex-col gap-3">
-                                    <span className="text-lg font-bold"><span className="font-semibold text-blue-600">Email:</span> herojod2525@gmail.com</span>
-                                    <span className="text-lg font-bold"><span className="font-semibold text-blue-600">Age:</span> 15</span>
+                                    <span className="text-lg font-bold"><span className="font-semibold text-blue-600">Email:</span> herojod2525@gmail.com</span>                
                                 </div>
                             </div>
 
