@@ -4,7 +4,7 @@ import { BiSupport, BiLogoJavascript, BiLogoTypescript, BiLogoMongodb } from "re
 import { PiMedalLight } from "react-icons/pi"
 import Marquee from "react-fast-marquee";
 import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa"
-import { SiMongoose, SiFirebase, SiTailwindcss, SiChakraui, SiJsonwebtokens, SiRazorpay, SiExpress } from "react-icons/si"
+import { SiMongoose, SiNextdotjs, SiFirebase, SiTailwindcss, SiChakraui, SiJsonwebtokens, SiRazorpay, SiExpress } from "react-icons/si"
 import { motion } from "framer-motion"
 
 const About = () => {
@@ -55,14 +55,10 @@ const About = () => {
                             <h1 className="text-2xl font-semibold underline">Web Developer & Mentor</h1>
                             <p className="text-lg">I’m a 15 y/o full-stack web developer building cool products and teaching others by creating content that revolves around many areas in web development.</p>
 
-                            <div className="flex flex-col md:flex-row gap-3 justify-between">
-                                <div className="flex flex-col gap-3">
-                                    <span className="text-lg font-bold"><span className="font-semibold text-blue-600">Name:</span> Om Agrawal</span>
-                                    <span className="text-lg font-bold"><span className="font-semibold text-blue-600">Country:</span> India</span>
-                                </div>
-                                <div className="flex flex-col gap-3">
-                                    <span className="text-lg font-bold"><span className="font-semibold text-blue-600">Email:</span> herojod2525@gmail.com</span>                
-                                </div>
+                            <div className="flex flex-col gap-3">
+                                <span className="text-lg font-bold"><span className="font-semibold text-blue-600">Name:</span> Om Agrawal</span>
+                                <span className="text-lg font-bold"><span className="font-semibold text-blue-600">Country:</span> India</span>
+                                <span className="text-lg font-bold"><span className="font-semibold text-blue-600">Email:</span> herojod2525@gmail.com</span>
                             </div>
 
                             <p className="leading-7">I pride myself on my ability to seamlessly integrate the front-end and back-end components of a web application, ensuring a smooth user experience and efficient functionality. Additionally, I have a deep understanding of databases, graphics design, and user experience management, allowing me to excel in all aspects of web development. I believe that being a full-stack web developer requires not only technical expertise but also excellent communication and teamwork skills.</p>
@@ -153,6 +149,9 @@ const About = () => {
                             </div>
                             <div className="mx-9">
                                 <FaReact />
+                            </div>
+                            <div className="mx-9">
+                                <SiNextdotjs />
                             </div>
                             <div className="mx-9">
                                 <SiTailwindcss />

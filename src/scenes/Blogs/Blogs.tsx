@@ -1,5 +1,5 @@
 import { blogs } from "../../info"
-import { FiLink } from "react-icons/fi"
+import { FiLink, FiArrowUpRight } from "react-icons/fi"
 import { motion } from "framer-motion"
 
 const Blogs = () => {
@@ -46,6 +46,22 @@ const Blogs = () => {
                     ))
                 }
             </div>
+
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ amount: 0.5 }}
+                transition={{ duration: 0.7 }}
+                variants={{
+                    hidden: { opacity: 0, x: -50 },
+                    visible: { opacity: 1, x: 0 },
+                }}
+                className="px-5 md:px-0 hover:text-neutral-200/90 cursor-pointer">
+                <a target="_blank" href="https://medium.com/@herocodes" className="flex justify-end items-center gap-1">
+                    Read All Blogs
+                    <FiArrowUpRight />
+                </a>
+            </motion.div>
         </div>
     )
 }
